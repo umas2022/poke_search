@@ -92,19 +92,7 @@
             methods: {
                 testbutton: function () {
                     console.log("!")
-
-
-                    if (Notification.permission === 'granted') {
-                        new Notification('敬请期待!');
-                    } else if (Notification.permission !== 'denied') {
-                        Notification.requestPermission().then(permission => {
-                            if (permission === 'granted') {
-                                new Notification('敬请期待!');
-                            }
-                        });
-                    }
-
-
+                    alert("敬请期待")
                 }
             }
         };
