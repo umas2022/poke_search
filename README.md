@@ -4,6 +4,8 @@
 ### 已弃坑
 - 等dlc更新了再回来做
 
+<img src="https://github.com/umas2022/poke_search/blob/main/readme/kodakku.gif" width="30%" height="30%">
+
 ### 使用
 - 运行index.html
 
