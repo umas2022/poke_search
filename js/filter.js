@@ -29,3 +29,6 @@ var selected = {
     }
 }
 
+function search(){
+    return selected
+}

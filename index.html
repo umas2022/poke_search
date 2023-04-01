@@ -21,7 +21,7 @@
         <div class="header">
             <h1>宝可梦速查</h1>
         </div>
-        <div class="type">
+        <div class="input">
             <div class="line">
                 <span class="label">对方属性:</span>
                 <el-select style="width: 100px;" v-model="selected.enemy_type.type_1">
@@ -72,12 +72,14 @@
             </div>
 
             <div class="line">
-                <el-button @click="testbutton">搜索</el-button>
+                <el-button @click="go_search">搜索</el-button>
             </div>
 
 
         </div>
-
+        <div class="output">
+            {{result}}
+        </div>
     </div>
     </div>
     <script>
@@ -87,11 +89,15 @@
                     // 选项列表
                     options_list: options_list,
                     selected: selected,
+                    // 查询结果
+                    result: ""
                 };
             },
             methods: {
-                testbutton: function () {
+                go_search: function () {
                     console.log("!")
+                    this.result = search()
+                    console.log(this.result)
                     alert("敬请期待")
                 }
             }
