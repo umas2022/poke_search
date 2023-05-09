@@ -1,5 +1,6 @@
 # poke_search
 宝可梦朱紫条件搜索页
+[Home Page](https://umas2022.github.io/poke_search/)
 
 ### 已弃坑
 - 等dlc更新了再回来做
